@@ -3185,8 +3185,8 @@ To make background jobs more robust, Rails uses `solid_queue` for production
 environments. Solid Queue stores jobs in the database and executes them in a
 separate process.
 
-Solid Queue is enabled for our production Kamal deployment by adding the
-`SOLID_QUEUE_IN_PUMA: true` environment variable to `config/deploy.yml`. This
+Solid Queue is enabled for our production Kamal deployment using the
+`SOLID_QUEUE_IN_PUMA: true` environment variable in `config/deploy.yml`. This
 tells our web server, Puma, to start and stop the Solid Queue process
 automatically.
 
